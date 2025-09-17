@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NGUYENLENGOCCHAU_1150070003_GIUAKY">
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false" />
+        <!-- Mở thẳng màn hình Đăng nhập -->
+        <activity
+            android:name=".dangnhapActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Các màn hình còn lại -->
+        <activity android:name=".dangkiActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".WelcomeActivity" />
+    </application>
+
+</manifest>
